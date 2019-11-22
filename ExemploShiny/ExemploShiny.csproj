@@ -16,4 +16,7 @@
     <PackageReference Include="Shiny.BluetoothLE" Version="1.0.0.484-beta" />
     <PackageReference Include="Shiny.SpeechRecognition" Version="1.0.0.484-beta" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Delegates\" />
+  </ItemGroup>
 </Project>

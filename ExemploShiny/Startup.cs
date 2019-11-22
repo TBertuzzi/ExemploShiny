@@ -8,7 +8,10 @@ namespace ExemploShiny
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            
+            //Caso queira utilizar seu proprio Delegate
+            //services.UseGps<LocationDelegates>();
+            services.UseGps();
+            services.UseMotionActivity();
         }
     }
 }
