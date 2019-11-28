@@ -1,4 +1,5 @@
 ﻿using System;
+using ExemploShiny.Delegates;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 
@@ -8,9 +9,7 @@ namespace ExemploShiny
     {
         public override void ConfigureServices(IServiceCollection services)
         {
-            //Caso queira utilizar seu proprio Delegate
-            //services.UseGps<LocationDelegates>();
-            services.UseGps();
+            services.UseGps<LocationDelegates>();
             services.UseMotionActivity();
         }
     }
